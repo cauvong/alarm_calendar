@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="calendarapp.truongnh.com.calendarapp.HomeActivity"
+    android:background="@drawable/home_background">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <fragment
+            android:id="@+id/fragment_bar"
+            android:name="calendarapp.truongnh.com.calendarapp.FragmentBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </fragment>
+
+        <!--<com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager-->
+            <!--android:id="@+id/cycle_horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100dp"-->
+            <!--app:icvp_interpolator="@android:anim/accelerate_decelerate_interpolator"-->
+            <!--app:icvp_scroll_duration="250"-->
+            <!--app:icvp_center_page_scale_offset="30dp"-->
+            <!--app:icvp_min_page_scale_offset="5dp"-->
+            <!--app:icvp_max_page_scale="1.0"-->
+            <!--app:icvp_min_page_scale="0.55"-->
+            <!--app:icvp_medium_scaled="false">-->
+
+        <!--</com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager>-->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/home_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_calendar_white"
+        android:onClick="gotoCalendar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

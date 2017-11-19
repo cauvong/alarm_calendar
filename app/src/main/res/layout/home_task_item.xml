@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/whiteColor">
+
+    <TextView
+        android:id="@+id/txvTaskDate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:text="12:10 am"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/homeTaskItemLine"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toRightOf="@+id/txvTaskDate"
+        android:layout_toEndOf="@+id/txvTaskDate"
+        android:background="@android:color/darker_gray"/>
+
+    <ImageView
+        android:id="@+id/imvTaskHome"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/ic_home_next" />
+
+    <TextView
+        android:id="@+id/txvTaskTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/imvTaskHome"
+        android:layout_toRightOf="@id/homeTaskItemLine"
+        android:text="Call Karzai"
+        android:textSize="16sp"
+        android:textColor="@color/blackColor"/>
+
+    <TextView
+        android:id="@+id/txvTaskNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvTaskTime"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imvTaskHome"
+        android:layout_toRightOf="@id/homeTaskItemLine"
+        android:text="Shadman, Jello-house, New lan the 3rd"
+        android:textSize="9sp"
+        android:textColor="@color/blackColor"/>
+
+
+</RelativeLayout>

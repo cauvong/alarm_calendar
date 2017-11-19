@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBar">#3187D0</color>
+    <color name="statusBar">#c52d2d2b</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="blackColor">#000000</color>
+    <color name="green_temp">#23A96E</color>
+    <color name="green_dark">#159204</color>
+    <color name="bright_green">#02D8B0</color>
+    <color name="button_green">#10a54a</color>
+    <!--add task-->
+    <color name="footerColorAddTask">#eb307fbe</color>
+    <color name="clearColor">#00000000</color>
+    <color name="pickerDateBackground">#0d0e10</color>
+    <color name="pickerViewBackground">#1a1c20</color>
+    <color name="pickerViewSelection">#459fc2</color>
+
+    <color name="alarm_activity_top_color">#d2f39733</color>
+    <color name="alarm_activity_normal_color">#dc636363</color>
+    <color name="alarm_activity_check_color">#dcaaabac</color>
+
+    <color name="cal_activity_shamsi_color">#bc4338</color>
+    <color name="cal_activity_normal_color">#111c24</color>
+    <color name="cal_activity_check_color">#4896d5</color>
+    <color name="cal_activity_current_color">#e59dc5e4</color>
+
+</resources>

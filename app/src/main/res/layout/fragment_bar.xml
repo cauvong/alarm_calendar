@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="calendarapp.truongnh.com.calendarapp.FragmentBar"
+    android:background="@color/colorBar">
+
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_home_add"
+        android:onClick="gotoAddTask" />
+
+    <TextView
+        android:id="@+id/txvGregorian"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/btnAdd"
+        android:text="Sunday"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txvDateGregorian"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txvGregorian"
+        android:layout_toLeftOf="@+id/btnAdd"
+        android:text="28 March 2016"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txvShamsi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/btnAdd"
+        android:gravity="left"
+        android:text="ﺔﺒﻨﺸﻜﻳ"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txvDateShamsi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txvGregorian"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/btnAdd"
+        android:gravity="left"
+        android:text="2016 دلو 21"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/whiteColor"
+        android:textStyle="bold" />
+</RelativeLayout>
